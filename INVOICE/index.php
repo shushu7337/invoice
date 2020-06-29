@@ -96,7 +96,7 @@ include "com/nav.php";
 <script>
   $('#save').on('click',function(){
     var form_data = $('#info').serialize();
-    console.log(form_data);
+    // console.log(form_data);
     $.post("save_invoice.php", form_data, function(result){
       //資料已新增完成 這裡可再用來判斷資料是否新增成功
     });
